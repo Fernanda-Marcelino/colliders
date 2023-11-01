@@ -7,10 +7,10 @@ Fernanda e Arthur
 Nosso projeto feito no Unity 3D, a pedido da orientadora Aline Brito.
 
 ### Colisores Usados 
-* Static Collider
-* Rigibody Collider 
-* Kinematic Collider
-* E seus Colliders Triggers
+ ```Static Collider
+ Rigibody Collider 
+ Kinematic Collider
+ E seus Colliders Triggers```
 
 
 ### O Jogo 
@@ -19,13 +19,54 @@ O nosso jogo é feito com o objetivo simples de um sobrevivente, atropelar, com 
 ## Códigos e onde se encontram 
 
 ### Carro 
-No carro, ou kart se encontra o Rigibody Collider usado para simularam uma mecânica de física, que reagem ou não a colisões e colocar forças aplicadas ao script
+No carro, ou kart se encontra o ```Rigibody Collider``` usado para simularam uma mecânica de física, que reagem ou não a colisões e colocar forças aplicadas ao script
+```ruby
+
+```
+
+* Alem de termos código de movimentação do kart 
+```ruby 
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class andar : MonoBehaviour
+{
+    public float velo = 10f;
+
+    void Start()
+    {
+
+    }
 
 
+    void Update()
+    {
+        float movimentoH = Input.GetAxis("Horizontal"); // A e D ou setas esquerda/direita
+        float movimentoV = Input.GetAxis("Vertical"); // W e S ou setas cima/baixo
+
+        Vector3 mover = new Vector3(0, 0, movimentoV) * velo * Time.deltaTime;
+
+        transform.Translate(mover);
+        transform.Rotate(0f, movimentoH * 1.2f, 0f);
+    }
+
+    private void OnTriggerEnter(Collider other) {
+   
+   if( other.gameObject.CompareTag("PickUp")){
+       
+        other.gameObject.SetActive(false);
+
+   } 
+}
+}
+````
 
 ### Monstros 
+Os Monstros têm como função apenas serem atropelados e "morrerem", por isso colocamos o ```Kinematic Collider``` que são scripts utilizados para transformar ou não seu item inserido no script, um exemplo é uma porta que você pode abrir ou não, mas mesmo não abrindo ela vai estar lá para caso queira abrir.
 
 ### Árvores e pedras 
+Não menos importante Usamos nas árvores e pedras o ```Static Collider``` que são usados para colocar uma colisão no objeto parado, pode ser utilizado no chão, parede, objetos não animados e etc.
 
 
 
