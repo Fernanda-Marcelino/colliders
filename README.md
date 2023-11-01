@@ -7,6 +7,7 @@ Fernanda e Arthur
 Nosso projeto feito no Unity 3D, a pedido da orientadora Aline Brito.
 
 ### Colisores Usados 
+
  ```Static Collider
  Rigibody Collider 
  Kinematic Collider
@@ -20,11 +21,17 @@ O nosso jogo é feito com o objetivo simples de um sobrevivente, atropelar, com 
 
 ### Carro 
 No carro, ou kart se encontra o ```Rigibody Collider``` usado para simularam uma mecânica de física, que reagem ou não a colisões e colocar forças aplicadas ao script
-```ruby
 
-```
 
-* Alem de termos código de movimentação do kart 
+### Monstros 
+Os Monstros têm como função apenas serem atropelados e "morrerem", por isso colocamos o ```Kinematic Collider``` que são scripts utilizados para transformar ou não seu item inserido no script, um exemplo é uma porta que você pode abrir ou não, mas mesmo não abrindo ela vai estar lá para caso queira abrir.
+
+
+### Árvores e pedras 
+Não menos importante Usamos nas árvores e pedras o ```Static Collider``` que são usados para colocar uma colisão no objeto parado, pode ser utilizado no chão, parede, objetos não animados e etc.
+
+
+* Codigo usado para colisão trigger dos monstros 
 ```ruby 
 using System.Collections;
 using System.Collections.Generic;
@@ -60,15 +67,7 @@ public class andar : MonoBehaviour
    } 
 }
 }
-````
-
-### Monstros 
-Os Monstros têm como função apenas serem atropelados e "morrerem", por isso colocamos o ```Kinematic Collider``` que são scripts utilizados para transformar ou não seu item inserido no script, um exemplo é uma porta que você pode abrir ou não, mas mesmo não abrindo ela vai estar lá para caso queira abrir.
-
-### Árvores e pedras 
-Não menos importante Usamos nas árvores e pedras o ```Static Collider``` que são usados para colocar uma colisão no objeto parado, pode ser utilizado no chão, parede, objetos não animados e etc.
-
-
+```
 
 
 # Galeria
@@ -76,6 +75,9 @@ Não menos importante Usamos nas árvores e pedras o ```Static Collider``` que s
 ![Captura de tela 2023-10-31 194336](https://github.com/Fernanda-Marcelino/colliders/assets/128320607/33bf4dfe-8709-4a11-bfa2-4439dd50eaa0)
 * Foto 2
 ![Captura de tela 2023-10-31 194317](https://github.com/Fernanda-Marcelino/colliders/assets/128320607/9ce92556-969a-4b70-b508-7f15457127f4)
+
+
+* Vídeo Do Jogo 
 
 
 
