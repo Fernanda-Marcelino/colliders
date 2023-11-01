@@ -8,10 +8,10 @@ Nosso projeto feito no Unity 3D, a pedido da orientadora Aline Brito.
 
 ### Colisores Usados 
 
- ```Static Collider
+ ``` Static Collider
  Rigibody Collider 
  Kinematic Collider
- E seus Colliders Triggers```
+ E seus Colliders Triggers ```
 
 
 ### O Jogo 
@@ -20,15 +20,15 @@ O nosso jogo é feito com o objetivo simples de um sobrevivente, atropelar, com 
 ## Códigos e onde se encontram 
 
 ### Carro 
-No carro, ou kart se encontra o ```Rigibody Collider``` usado para simularam uma mecânica de física, que reagem ou não a colisões e colocar forças aplicadas ao script
+No carro, ou kart se encontra o ``Rigibody Collider`` usado para simularam uma mecânica de física, que reagem ou não a colisões e colocar forças aplicadas ao script
 
 
 ### Monstros 
-Os Monstros têm como função apenas serem atropelados e "morrerem", por isso colocamos o ```Kinematic Collider``` que são scripts utilizados para transformar ou não seu item inserido no script, um exemplo é uma porta que você pode abrir ou não, mas mesmo não abrindo ela vai estar lá para caso queira abrir.
+Os Monstros têm como função apenas serem atropelados e "morrerem", por isso colocamos o ``Kinematic Collider`` que são scripts utilizados para transformar ou não seu item inserido no script, um exemplo é uma porta que você pode abrir ou não, mas mesmo não abrindo ela vai estar lá para caso queira abrir.
 
 
 ### Árvores e pedras 
-Não menos importante Usamos nas árvores e pedras o ```Static Collider``` que são usados para colocar uma colisão no objeto parado, pode ser utilizado no chão, parede, objetos não animados e etc.
+Não menos importante Usamos nas árvores e pedras o ``Static Collider`` que são usados para colocar uma colisão no objeto parado, pode ser utilizado no chão, parede, objetos não animados e etc.
 
 
 * Codigo usado para colisão trigger dos monstros 
