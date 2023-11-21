@@ -68,17 +68,9 @@ public class andar : MonoBehaviour
 }
 }
 ```
-
-
-# Galeria
-* Foto 1
-![Captura de tela 2023-10-31 194336](https://github.com/Fernanda-Marcelino/colliders/assets/128320607/33bf4dfe-8709-4a11-bfa2-4439dd50eaa0)
-* Foto 2
-![Captura de tela 2023-10-31 194317](https://github.com/Fernanda-Marcelino/colliders/assets/128320607/9ce92556-969a-4b70-b508-7f15457127f4)
-
 ### Menu 
 Para que que tenha o Menu en nisso jogo, primeiro colocamos botões e adicionamos GameObject Vazio para colocarmos o código que faz com que saia ou entra no jogo.
-
+* 
 * Códigos
 ```ruby 
 public class andar : MonoBehaviour
@@ -122,6 +114,15 @@ public class andar : MonoBehaviour
 
 
 ```
+
+
+# Galeria
+* Foto 1
+![Captura de tela 2023-10-31 194336](https://github.com/Fernanda-Marcelino/colliders/assets/128320607/33bf4dfe-8709-4a11-bfa2-4439dd50eaa0)
+* Foto 2
+![Captura de tela 2023-10-31 194317](https://github.com/Fernanda-Marcelino/colliders/assets/128320607/9ce92556-969a-4b70-b508-7f15457127f4)
+* Foto 3
+  
 
 * Vídeo Do Jogo Esta No Drive pois era muito grande para o readme
 
