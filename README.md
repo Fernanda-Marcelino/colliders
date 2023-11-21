@@ -81,6 +81,45 @@ Para que que tenha o Menu en nisso jogo, primeiro colocamos botões e adicionamo
 
 * Códigos
 ```ruby 
+public class andar : MonoBehaviour
+{
+    public float velo = 10f;
+
+    public float bicho = 0f;
+    void Start()
+    {
+
+    }
+
+
+    void Update()
+    {
+        float movimentoH = Input.GetAxis("Horizontal"); // A e D ou setas esquerda/direita
+        float movimentoV = Input.GetAxis("Vertical"); // W e S ou setas cima/baixo
+
+        Vector3 mover = new Vector3(0, 0, movimentoV) * velo * Time.deltaTime;
+
+        transform.Translate(mover);
+        transform.Rotate(0f, movimentoH * 1.2f, 0f);
+    }
+
+    private void OnTriggerEnter(Collider other) {
+   
+   if( other.gameObject.CompareTag("PickUp")){
+       
+        other.gameObject.SetActive(false);
+        bicho++;
+          
+
+   }
+        if (bicho == 8)
+        {
+            SceneManager.LoadScene("cena3");
+        }
+
+    }
+}
+
 
 ```
 
