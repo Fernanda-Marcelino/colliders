@@ -70,7 +70,7 @@ public class andar : MonoBehaviour
 ```
 ### Menu 
 Para que que tenha o Menu en nisso jogo, primeiro colocamos botões e adicionamos GameObject Vazio para colocarmos o código que faz com que saia ou entra no jogo.
-* 
+* Codigo são as alterações de telas
 * Códigos
 ```ruby 
 public class andar : MonoBehaviour
