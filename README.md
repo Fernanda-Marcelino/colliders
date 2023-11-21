@@ -122,7 +122,8 @@ public class andar : MonoBehaviour
 * Foto 2
 ![Captura de tela 2023-10-31 194317](https://github.com/Fernanda-Marcelino/colliders/assets/128320607/9ce92556-969a-4b70-b508-7f15457127f4)
 * Foto 3
-  
+![Captura de tela 2023-11-21 113043](https://github.com/Fernanda-Marcelino/colliders/assets/128982469/f68b0d39-8c05-4f93-92ee-35aee6ef1c1c)
+
 
 * Vídeo Do Jogo Esta No Drive pois era muito grande para o readme
 
