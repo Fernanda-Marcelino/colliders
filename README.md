@@ -76,6 +76,13 @@ public class andar : MonoBehaviour
 * Foto 2
 ![Captura de tela 2023-10-31 194317](https://github.com/Fernanda-Marcelino/colliders/assets/128320607/9ce92556-969a-4b70-b508-7f15457127f4)
 
+### Menu 
+Para que que tenha o Menu en nisso jogo, primeiro colocamos botões e adicionamos GameObject Vazio para colocarmos o código que faz com que saia ou entra no jogo.
+
+* Códigos
+```ruby 
+
+```
 
 * Vídeo Do Jogo Esta No Drive pois era muito grande para o readme
 
